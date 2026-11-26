@@ -1,7 +1,8 @@
 package pt.ul.fc;
 
 /**
- * Simulação de uma bola em queda, numa caixa vista de lado, sujeita à gravidade.
+ * Simulação de uma bola em queda, numa caixa vista de lado, sujeita à
+ * gravidade.
  * A bola ressalta no chão, perdendo parte da velocidade.
  * Unidades: metros e segundos. A origem é o canto inferior esquerdo da caixa
  * e o eixo y aponta para cima.
@@ -47,7 +48,7 @@ public class Simulacao {
      * @param dt duração do passo, em segundos
      */
     public void passo(double dt) {
-        bola.acelerar(GRAVIDADE, 0.0);
+        bola.acelerar(GRAVIDADE, dt);
         bola.mover(dt);
         ressaltar();
     }
